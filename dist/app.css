@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #4E3D1E;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 1px solid #4E3D1E;
+}
+header #brandLogo {
+  height: 30px;
+}
+header .header_nav {
+  display: flex;
+  align-items: center;
+}
+header .header_nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+header .header_nav ul li {
+  margin-right: 20px;
+}
+header .header_nav button {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: white;
+  color: #2B4792;
+  border: 1px solid #2B4792;
+  border-radius: 5px;
+  text-align: center;
+}
+header .header_nav button .btn_logo {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}

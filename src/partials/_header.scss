@@ -1,0 +1,36 @@
+header {
+    @include myW80;
+    @include myFlexCentered;
+    justify-content: space-between;
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid $fontColor;
+
+    #brandLogo {
+        height: 30px;
+    }
+
+    .header_nav {
+        @include myFlexCentered;
+
+        ul {
+            @include myFlexCentered;
+            list-style: none;
+
+            li {
+                margin-right: 20px;
+            }
+        }
+
+        button {
+            @include myBtnWhite;
+            text-align: center;
+
+            .btn_logo {
+                height: 20px;
+                width: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

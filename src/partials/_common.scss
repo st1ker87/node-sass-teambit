@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: $fontColor;
+}
+
+// alignment
+@mixin myFlexCentered {
+    display: flex;
+    align-items: center;
+}
+@mixin myW80 {
+    width: 80%;
+    margin: 0 auto;    
+}
+
+@mixin myLeft_col2 {
+    float: left;
+    width: 50%;
+}
+
+// buttons
+@mixin myBtnWhite {
+    @include myFlexCentered;
+    padding: 10px 15px;
+    background-color: $whiteBack;
+    color: $blueBack;
+    border: 1px solid $blueBack;
+    border-radius: 5px;
+}
+
