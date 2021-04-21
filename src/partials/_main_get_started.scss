@@ -15,7 +15,7 @@
                 margin-bottom: 15px;
             }
             .flex_row {
-                @include myflexRow;
+                @include myFlexCentered;
                 img {
                     margin-right: 20px;
                 }

@@ -1,0 +1,38 @@
+footer {
+    font-weight: bold;
+    padding: 40px 0;
+    @include myW80;
+    @include myflexRow; 
+    .info {
+        @include myflexRow;
+        width: 30%;
+        img {
+            align-self: flex-start;
+            width: 100px;
+            margin-right: 15px;
+        }
+        span {
+            color: $blueBack;
+            font-weight: normal;
+        }
+    }
+    .nav_footer {
+        flex-grow: 2;
+        @include myflexRow;
+        justify-content: space-between;
+        ul {
+            li {
+                list-style: none;
+                line-height: 1.5em;
+                &:first-child {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+                &:not(:first-child) {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}
