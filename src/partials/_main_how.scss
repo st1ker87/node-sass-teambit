@@ -1,0 +1,29 @@
+#how {
+    background-color: $sandBack;
+    text-align: center;
+    .container {
+        @include myW80;
+        &::after {
+            @include myTable;
+        }
+        .col3 {
+            @include myLeft_col3;
+            text-align: center;
+            .img_how {
+                width: 30%;
+                max-height: 100px;
+            }
+        }
+        .col1 {
+            @include myLeft_col1;
+            margin: 50px 0;
+            img {
+                max-width: 25%;
+            }
+            &.first {
+                border-bottom: 1px solid $fontColor;
+                padding-bottom: 50px;
+            }
+        }
+    }
+}

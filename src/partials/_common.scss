@@ -11,6 +11,11 @@ body {
 
 section {
     padding: 40px 0;
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }  
 }
 
 // alignment
@@ -22,10 +27,51 @@ section {
     width: 80%;
     margin: 0 auto;    
 }
+@mixin myW60 {
+    width: 60%;
+    margin: 40px auto;
+}
+@mixin tab80left {
+    float: left;
+    width: 80%;
+    margin-bottom: 40px;
+}
+@mixin tab80right {
+    float: right;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+@mixin myLeft_col1 {
+    float: left;
+    width: 100%;
+}
 
 @mixin myLeft_col2 {
     float: left;
     width: 50%;
+}
+
+@mixin myLeft_col3 {
+    float: left;
+    width: calc(100% / 3);
+    margin: 40px 0;
+}
+
+@mixin myTable {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@mixin myflexRow {
+    display: flex;
+    align-items: center;
+}
+
+@mixin myflexCol {
+    display: flex;
+    flex-direction: column;
 }
 
 // buttons
@@ -45,5 +91,16 @@ section {
     color: $whiteBack;
     border-radius: 5px;
     font-weight: 600;
+}
+
+.buttons {
+    @include myFlexCentered;
+    margin-top: 40px;
+    button {
+        @include myBtnBlue;
+        img {
+            width: 20px;
+        }
+    }
 }
 

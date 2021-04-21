@@ -1,0 +1,32 @@
+#learn {
+    @each $item in feedback, review {
+        ##{$item} {
+            @include myTable;
+            @include tab80left;
+        }
+    }
+    @each $item in surveys, praise {
+        ##{$item} {
+            @include myTable;
+            @include tab80right;
+        }
+    }
+    .w70 {
+        float: left;
+        max-width: 60%;
+        img {
+            max-width: 100%;
+        }
+    }
+    .w30 {
+        float: left;
+        max-width: 30%;
+        img {
+            height: 300px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $blueBack;
+    }
+}

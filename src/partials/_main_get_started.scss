@@ -1,0 +1,36 @@
+#get_started {
+    background-color: $sandBack;
+    .container {
+        @include myW80;
+        text-align: center;
+        .experience {
+            @include myW60;
+            text-align: left;
+            padding: 20px 15px;
+            background-color: $whiteBack;
+            border: 1px solid $blueBack;
+            border-radius: 10px;
+            .underTxt {
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+            .flex_row {
+                @include myflexRow;
+                img {
+                    margin-right: 20px;
+                }
+                .flex_col {
+                    .underTxt {
+                        margin: 0;
+                        &:first-child {
+                            color: $blueBack;
+                        }
+                    }
+                }
+            }
+        }
+        .buttons {
+            justify-content: center;
+        }
+    }
+}

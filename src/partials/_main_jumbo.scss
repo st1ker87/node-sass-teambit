@@ -1,0 +1,12 @@
+#jumbotron {
+    .container {
+        @include myW80;
+        .left_50 {
+            @include myLeft_col2;
+            .img_back {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
